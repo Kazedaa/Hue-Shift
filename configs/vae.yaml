@@ -1,0 +1,22 @@
+dataset_config:
+  ROOT: 'data'
+  BATCH_SIZE: 4
+  IMG_SIZE: 128
+
+training_config:
+  NUM_EPOCHS: 20
+  ADV_START: 15000
+  SAMPLE_STEP: 1000
+
+model_config:
+  IM_CHANNELS: 3
+  DOWN_CHANNELS: [64, 128, 256, 256]
+  MID_CHANNELS: [256, 256]
+  DOWN_SAMPLE: [True, True, True]
+  NUM_DOWN_LAYERS: 2
+  NUM_MID_LAYERS: 2
+  NUM_UP_LAYERS: 2
+  DOWN_UP_ATTN: [False, False, False]
+  Z_CHANNELS: 3
+  NORM_CHANNELS: 32
+  NUM_HEADS: 4
